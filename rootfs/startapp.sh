@@ -6,4 +6,4 @@ set -u # Treat unset variables as an error.
 export HOME=/config
 mkdir -p /config/profile
 firefox --version
-exec /usr/bin/firefox_wrapper $url --profile /config/profile --no-xshm --setDefaultBrowser >> /config/log/firefox/output.log 2>> /config/log/firefox/error.log
+exec /usr/bin/firefox_wrapper $url -safe-mode --profile /config/profile --no-xshm --setDefaultBrowser >> /config/log/firefox/output.log 2>> /config/log/firefox/error.log
